@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>荒野求生之钻木取火</title>
+    <link href="Asset/Css/Comm.css" rel="stylesheet" />
+    <link href="Asset/Css/animate.css" rel="stylesheet" />
+    <link href="Asset/Css/MyAmimate.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 页面加载部分-->
+    <section class="loader">
+        <span>页面加载中......</span>
+    </section>
+    <div class="content">
+        <!-- 开始游戏页面 -->
+        <div class="startPage">
+            <img src="Asset/Images/default.jpg" class="start" />
+            <!-- <img src="Asset/Images/title.png" class="theme" />
+            <div class="role">
+                <img src="Asset/Images/role.png" class="role" />
+            </div>-->
+            <a href="javascript:void(0)" id="startBtu"><img src="Asset/Images/begin.png" class="begin" /></a>
+        </div>
+
+        <!-- 游戏页面 -->
+        <div class="gamePage">
+            <!-- <div><a href="javascript:void(0)" id="gameSuccess">游戏通过</a><a href="javascript:;" id="gameFailure">游戏失败</a></div> -->
+
+            <!-- 游戏界面 -->
+            <div class="playGame">
+                <!-- <p>游戏界面</p> -->
+                <div id="text">20</div>
+                <!-- 开始游戏 -->
+                <div class="starttimeOne">
+                    <img src="Asset/Images/starttime_1.png" style="width: 100%;">
+                </div>
+                <div class="starttimeTwo">
+                    <img src="Asset/Images/starttime_2.png" style="width: 100%;">
+                </div>
+                <div class="starttimethree">
+                    <img src="Asset/Images/starttime_3.png" style="width: 100%;">
+                </div>
+                <div class="starttimefour">
+                    <img src="Asset/Images/starttime_4.png" style="width: 100%;">
+                </div>
+
+                <!-- 进度条 -->
+                <div class="frame">
+                    <img src="Asset/Images/bar_frame.png" style="width: 100%;">
+                </div>
+                <div class="barContent">
+                    <img src="Asset/Images/bar_content.png" style="width: 100%;">
+                </div>
+                <div class="barBg">
+                    <img src="Asset/Images/bar_bg.png" style="width: 100%;">
+                </div>
+                <!-- 人头 -->
+                <div class="headthree">
+                    <img src="Asset/Images/head_3.png" style="width: 100%;">
+                </div>
+                <!-- 身体 -->
+                <div class="body">
+                    <img src="Asset/Images/body.png" style="width: 100%;">
+                </div>
+                <!-- 手 -->
+                <div class="handOneLeft FlashingOneNormal">
+                    <img src="Asset/Images/handone_left.png" style="width: 100%;">
+                </div>
+                <div class="handOneRight FlashingOneNormal">
+                    <img src="Asset/Images/handone_right.png" style="width: 100%;">
+                </div>
+                <div class="handTwoLeft FlashingTwoNormal">
+                    <img src="Asset/Images/handtwo_left.png" style="width: 100%;">
+                </div>
+                <div class="handTwoRight FlashingTwoNormal">
+                    <img src="Asset/Images/handtwo_right.png" style="width: 100%;">
+                </div>
+
+                <div class="handOneLeftFast FlashingOneFast">
+                    <img src="Asset/Images/handone_left.png" style="width: 100%;">
+                </div>
+                <div class="handOneRightFast FlashingOneFast">
+                    <img src="Asset/Images/handone_right.png" style="width: 100%;">
+                </div>
+                <div class="handTwoLeftFast FlashingTwoFast">
+                    <img src="Asset/Images/handtwo_left.png" style="width: 100%;">
+                </div>
+                <div class="handTwoRightFast FlashingTwoFast">
+                    <img src="Asset/Images/handtwo_right.png" style="width: 100%;">
+                </div>
+
+                <!-- 木棍-->
+                <div class="woodOne">
+                    <img src="Asset/Images/wood_1.png" style="width: 100%;">
+                </div>
+                <div class="woodTwo">
+                    <img src="Asset/Images/wood_2.png" style="width: 100%;">
+                </div>
+                <div class="woodThree">
+                    <img src="Asset/Images/wood_3.png" style="width: 100%;">
+                </div>
+                <div class="woodFour">
+                    <img src="Asset/Images/wood_4.png" style="width: 100%;">
+                </div>
+
+
+                <!-- 火和烟-->
+                <div class="smoke">
+                    <img src="Asset/Images/smoke.png" style="width: 100%;">
+                </div>
+                <div class="fire">
+                    <img src="Asset/Images/fire.png" style="width: 100%;">
+                </div>
+
+                <!-- 背影 -->
+                <div class="stakes">
+                    <img src="Asset/Images/stakes.png" style="width: 100%;">
+                </div>
+
+
+
+
+                <div class="leftRight">
+                    <div class="left">
+                        <img src="Asset/Images/game_left.png" style="width: 100%;"></div>
+                    <div class="leftRight_text">
+                        <img src="Asset/Images/leftright_text.png" style="width: 100%;"></div>
+                    <div class="right">
+                        <img src="Asset/Images/game_right.png" style="width: 100%;"></div>
+                </div>
+
+
+            </div>
+
+            <!-- 遮罩层 -->
+            <div class="mask"></div>
+            <!-- 游戏通过弹出页面 -->
+            <div class="success bombbox">
+                <img src="Asset/Images/logo_1.png" class="logo" />
+                <div class="bombbox_success personOne">
+                    <p><span class="name">XXX</span>取火用了<span class="time"></span>秒，生存率是100%，这么牛逼！要做酋长，除了你没谁了~！</p>
+                    <img src="Asset/Images/person_1.png" />
+                </div>
+                <div class="bombbox_success persontwo">
+                    <P>厉害~<span class="name">XXX</span>取火用了<span class="time"></span>秒，生存率是80%，不但能力很强，颜值又很高，已被酋长看中，你有戏哦~</P>
+                    <img src="Asset/Images/person_2.png" />
+                </div>
+                <div class="bombbox_success personthree">
+                    <P>哇哦~<span class="name">XXX</span>取火用了<span class="time"></span>秒，生存率是60%，这实力，百兽都要封你为王啊！</P>
+                    <img src="Asset/Images/person_3.png" />
+                </div>
+                <div class="bombbox_success personfour">
+                    <P>不错哟~<span class="name">XXX</span>取火用了<span class="time"></span>秒，生存率是17%，被抓去做了部落的储备粮，能滋润几天。</P>
+                    <img src="Asset/Images/person_4.png" />
+                </div>
+                <a href="javascript:void(0)" class="goAward"><img src="Asset/Images/free.png" /></a>
+                <a href="javascript:void(0)" class="playAgain"><img src="Asset/Images/again.png" /></a>
+            </div>
+            <!-- 游戏失败弹出页面 -->
+            <div class="failure bombbox">
+                <img src="Asset/Images/logo_1.png" class="logo" />
+                <div class="bombbox_failure">
+                    <p>啊哦~<span class="name">XXX</span>取火用了<span class="time"></span>秒，生存率居然只有0%，就这么不幸地被贝爷抓到了！</p>
+                    <img src="Asset/Images/person_5.png" />
+                </div>
+                <a href="javascript:void(0)" class="goAward"><img src="Asset/Images/free.png" /></a>
+                <a href="javascript:void(0)" class="playAgain"><img src="Asset/Images/again.png" /></a>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- 领奖页面 -->
+    <div class="awardPage">
+        <img src="Asset/Images/award_bg.jpg" class="award_bg" />
+        <div class="awardMain">
+            <div class="awardLogo"><img src="Asset/Images/logo.png" />
+                <a href="http://mp.weixin.qq.com/s?__biz=MjM5NDMzNzAyMA==&mid=210633619&idx=1&sn=e90f26f431850d4ccb3db3e972f5cb77#rd" class="attention">关注微信</a>
+            </div>
+            <div class="awardPrize">
+                <p class="prizeText_1">吃饱了 ! 才能保护部落</p>
+                <p class="prizeText_2">吃好了 ! 才能美美美</p>
+                <p class="prizeText_3">吃饱了 ! 才能引领百兽</p>
+                <p class="prizeText_4">吃饱了 ! 才有力气逃跑</p>
+                <p class="prizeText_5">吃饱了 ! 才有力气逃跑</p>
+                <p>丽芙家居送你西式煎锅</p>
+                <div class="prize">
+                    <div class="prizePic"><img src="Asset/Images/prizepic.png" /></div>
+                    <div class="prizeRight"><img src="Asset/Images/sale.png" /></div>
+                </div>
+                <p class="winprize">不粘少油烟西式煎锅(时尚系列)</p>
+            </div>
+            <div class="info">
+                <p class="cellnum">
+                    <input type="text" placeholder="输入手机号" />
+                    <a href="javascript:void(0)" class="getcode"><img src="Asset/Images/getcode.png" /></a>
+                </p>
+                <p>
+                    <input type="text" placeholder="输入验证码" class="entrycode" /></p>
+            </div>
+            <div class="accept">
+                <a href="javascript:void(0)" class="acceptprize" id="goShare"><img src="Asset/Images/receive.png" /></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 验证码页面 -->
+    <div class="codePage">
+        <img src="Asset/Images/code_bg.jpg" class="code_bg" />
+        <div class="awardMain">
+            <div class="awardLogo"><img src="Asset/Images/logo.png" />
+                <a href="http://mp.weixin.qq.com/s?__biz=MjM5NDMzNzAyMA==&mid=210633619&idx=1&sn=e90f26f431850d4ccb3db3e972f5cb77#rd" class="attention">关注微信</a>
+            </div>
+            <div class="awardPrize">
+                <div class="prize">
+                    <div class="prizePic">
+                        <img src="Asset/Images/prizepic.png" />
+                    </div>
+                </div>
+                <p class="prosit">恭喜获得：不粘少油烟西式煎锅(时尚系列)</p>
+                <p class="prosit">记得截图保存兑换码哟</p>
+                <div class="code">LC001</div>
+            </div>
+            <div class="step">
+                <p class="awardstep">领奖步骤：</p>
+                <p>1.下载丽芙家居APP，或登陆<span>www.LifeVC.com</span></p>
+                <p>2.登陆手机号需与领取兑换码的手机号一致</p>
+                <p>3.在购物车的“礼品兑换”栏，输入：<span>LC001</span>，购物满69元，即可免费领取，每个手机号限领1份</p>
+                <p>4.券码有效期3天</p>
+                <p>5.礼品数量有限，先到先得，领完即止</p>
+                <p>6.不可与其它免费礼同享</p>
+            </div>
+            <div class="accept">
+                <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.lifevc.shop" class="btn_down"><img src="Asset/Images/btn_down.png" /></a>
+            </div>
+        </div>
+    </div>
+    <!--分享页面-->
+    <div class="sharePage">
+        <div class="share_newbackgc"> <img src="Asset/Images/share_newmain.jpg" /></div>
+        <div class="share_newwords">
+            <p class="share_1"><span class="name"></span>用<span class="time"></span>秒取火成功，荒野生存率100%！要做酋长，除了你没谁了！</p>
+            <p class="share_2"><span class="name"></span>用<span class="time"></span>秒取火成功，荒野生存率80%！能力强，颜值高，已被酋长看中！你有戏哦～</p>
+            <p class="share_3"><span class="name"></span>用<span class="time"></span>秒取火成功，荒野生存率60%！这实力，百兽都要封你为王啊！</p>
+            <p class="share_4"><span class="name"></span>用<span class="time"></span>秒取火成功，荒野生存率17%！被抓去做了部落的储备粮，能滋润几天。</p>
+            <p class="share_5"><span class="name"></span>用20秒取火成功，荒野生存率0%！就这么不幸地被贝爷抓到了！</p>
+        </div>
+        <div class="share_newchage">
+            <a href="javascript:void(0)" id="goGame"><img src="Asset/Images/share_new04.png" /></a>
+        </div>
+    </div>
+
+    <script src="Asset/Js/zepto.min.js"></script>
+    <script src="Asset/Js/ajax.js"></script>
+    <script src="Asset/Js/Comm.js"></script>
+    <script src="Asset/Js/jweixin-1.0.0.js"></script>
+
+    <script>
+        var rotateScale = null;
+        var width = null;
+        var refreshViewport = function(clientWidth) {
+            if (clientWidth) { //获取页面可见范围的宽
+                var width = 320;
+                var scale = clientWidth / width; //获取页面可见范围的宽与320的比例
+                var viewport = 'width=' + width + ", initial-scale=" + scale + ", maximum-scale=" + scale + ", minimum-scale=" + scale + ', user-scalable=no, minimal-ui'; //设置宽，默认比例，最大比例，最小比例，手动缩放
+                document.getElementsByName('viewport')[0].setAttribute('content', viewport);
+            };
+        };
+
+        function orientationChange() {
+            if (rotateScale == null) {
+                rotateScale = document.documentElement.clientWidth / window.screen.width;
+                width = window.screen.width * rotateScale;
+            } else {
+                width = window.screen.width * rotateScale;
+            }
+            screenChange();
+        };
+
+        function screenChange() {
+            refreshViewport(width);
+        }
+
+        // 添加事件监听
+        addEventListener('load', function() {
+            orientationChange();
+            window.onorientationchange = orientationChange;
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+﻿html {height: 100%;margin: 0;padding: 0;}
+body {margin: 0;font-family: Microsoft YaHei;height: 100%;padding: 0;}
+a{text-decoration: none;}
+
+
+.loader {z-index:100;width:100%;height:100%;background-color:#000;position: absolute;top: 0;left: 0;text-align: center;}
+.loader span {color:#939393;position:absolute;font-size:12px;display: block;text-align: center;margin-top: 60%;width: 100%;}
+.content{z-index:5;display: none;}
+/*开始页面+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.startPage{height: 100%;width: 100%;position: absolute;z-index: 10;top: 0;left: 0;overflow: hidden;background-color: #000;text-align: center;display: none;}
+.startPage .start{width:100%;height:100%;position:absolute;top:0;left:0;z-index:-1;}
+.startPage img{width:90%;}
+.startPage .role img{width: 77%}
+.startPage div{z-index:999;}
+.startPage img.role{margin-top:-72px}
+.startPage a{display:block;width:180px;height:46px;/*margin:-5px auto;*/z-index:1;-webkit-tap-highlight-color:rgba(255,0,0,0);position:absolute;bottom:20px;left:50%;margin-left:-90px;}
+/*游戏页面+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.gamePage{ height: 100%;width: 100%;position: absolute;z-index: 9;top: 0;left: 0;overflow: hidden;text-align: center;background:url('../Images/game_bg.jpg') no-repeat;background-size:100%;display: none;}
+.gamePage p{font-size: 13px;color: #fff;}
+.gamePage a{font-size: 13px;color: #fff;margin: 10px;}
+.mask{height: 100%;width: 100%;position: absolute;z-index: 101;top: 0;left: 0;display: none;background-color: rgba(0,0,0,0.5)}
+.success{height: 50%;width: 80%;position: absolute;z-index: 102;top: 50%;left: 50%;margin-top:-50%;margin-left: -40%;background-color: #fff;display: none;}
+.gamePage .success p{font-size: 13px;color: #000;}
+.gamePage .success a{font-size: 13px;color: #e00;}
+.gamePage .failure p{font-size: 13px;color: #000;}
+.gamePage .failure a{font-size: 13px;color: #f00;}
+/*进度条*/
+.frame{position: absolute;width: 6.6%;top: 8.3%;right:5.2%;z-index:3;}
+.barBg{position: absolute;width: 3.8%;top: 9.4%;z-index: 1;right: 6.6%;}
+.barContent{position: absolute;width: 3.2%;top: 9.5%; z-index: 2;right: 6.9%;overflow: hidden;}
+#text{position: absolute;width: 6.6%;text-align: center; top:5.5%;right:5.2%; color: #ffb45c;}
+/*人头*/
+
+.headthree{position: absolute;width: 53%;top: 36.5%;left:32.2%;z-index:20;}
+/*身体*/
+.body{position: absolute;width: 50.4%;top: 52%;left:36%;z-index:7;}
+/*手*/
+.handOneLeft{position: absolute;width: 48.6%;top:60%;left:25%;z-index:17;}
+.handOneRight{position: absolute;width: 43.1%;top:60%;left:13%;z-index:5;}
+.handTwoLeft{position: absolute;width: 58.4%;top:60%;left:17%;z-index:17;opacity: 0}
+.handTwoRight{position: absolute;width: 34.3%;top:61%;left:22%;z-index:5;opacity: 0}
+
+
+.handOneLeftFast{position: absolute;width: 48.6%;top:60%;left:25%;z-index:17;opacity: 1;display: none;}
+.handOneRightFast{position: absolute;width: 43.1%;top:60%;left:13%;z-index:5;opacity: 1;display: none;}
+.handTwoLeftFast{position: absolute;width: 58.4%;top:60%;left:17%;z-index:17;opacity: 0;display: none;}
+.handTwoRightFast{position: absolute;width: 34.3%;top:61%;left:22%;z-index:5;opacity: 0;display: none;}
+
+/*木棍*/
+.woodOne{position: absolute;width: 7.6%;top:55%;left:20%;z-index:9;}
+.woodTwo{position: absolute;width: 7.6%;top:55%;left:20%;z-index:8;}
+.woodThree{position: absolute;width: 7.6%;top:55%;left:20%;z-index:7;}
+.woodFour{position: absolute;width: 7.6%;top:55%;left:20%;z-index:10;}
+/*烟火*/
+.smoke{position: absolute;width: 26%;top:69.3%;left:9.6%;z-index:5;display: none;}
+.fire{position: absolute;width: 31.3%;top:62.3%;left:4.9%;z-index:5;display: none;}
+
+/*背影*/
+.stakes{position: absolute;width: 88.7%;top: 69.5%;right:0%;z-index:1;}
+
+
+/*左右箭头*/
+.leftRight{position: absolute;bottom: 0;height: 80%;left: 0;width: 100%;z-index: 100;}
+.leftRight div{bottom:7%;}
+.leftRight .leftRight_text{position: absolute;width: 29%;margin-left: -14.5%;left: 50%;}
+.leftRight .left{position: absolute;left:15.4%;width: 11.25%;}
+.leftRight .right{position: absolute;right:15.4%;width: 11.25%;}
+
+/*倒计时*/
+.starttimeOne{position: absolute;width: 37.5%;top:35%;left:50%;margin-left: -18.7%; z-index:102;display: none;}
+.starttimeTwo{position: absolute;width: 37.5%;top:35%;left:50%;margin-left: -18.7%;z-index:102;display: none;}
+.starttimethree{position: absolute;width: 37.5%;top:35%;left:50%;margin-left: -18.7%;z-index:102;display: none;}
+.starttimefour{position: absolute;width: 37.5%;top:35%;left:50%;margin-left: -18.7%;z-index:102;display: none;}
+
+
+/*领奖页面+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.awardPage{height: 100%;width: 100%;position: absolute;z-index: 11;top: 0;left: 0;background-color: #fff;text-align: center;display: none;}
+.award_bg{position: absolute;z-index: -1;top: 0;left: 0;width:100%;}
+.awardPage p{font-size: 13px;color: #5b9dad;margin:0; line-height: 20px;}
+.awardPage a{font-size: 13px;color: blue;}
+.awardLogo{width: 100%;height: 154px;}
+.awardLogo img{width:168px;padding-top:13px;margin-left:60px;}
+.awardLogo a{display:block;width:40px;height:20px;line-height:22px;font-size:8px;color:#fff;background-color:#319707;float: right;margin: 11px 18px 0 0;border:1px solid #319707;border-radius:4px;-webkit-tap-highlight-color:rgba(255,0,0,0);}
+.awardPrize{width: 219px;margin: 0px auto;overflow: hidden;}
+.awardPrize p{font-size:15px;font-weight:600;color:#c86a28;}
+.awardPrize .winprize{margin-top: -4px;color: #333333;font-size: 10px;width: 168px;font-weight: 600;float: right;}
+.prize{width:100%;margin:5px auto;position:relative;}
+.prizePic{width: 166px;margin:0px auto;}
+.prizePic img{width:100%;}
+.prizeRight{width: 60px;height: 71px;position: absolute;top: 100%;left: 50%;margin-top: -71px;background-size: 100%;margin-left: 56px;}
+.prizeRight img{width:47px;}
+.info{width:212px;margin:0px auto;}
+.info p{line-height:35px;}
+.info p input{background-color: #fff;opacity: 0.2;border-radius: 9px;height: 23px;border:1px solid #b8ced6;padding-left:10px;width:157px;}
+.info p input:focus{border:1px solid #b8ced6;opacity: 0.7;border-radius:9px;outline:none}
+.info .cellnum{margin-top:8px;overflow:hidden;}
+.info .cellnum input{float:left;width:130px;opacity: 0.4;}
+.info .cellnum .getcode{display:block;float:right; width:62px;height:27px;-webkit-tap-highlight-color:rgba(255,0,0,0); }
+.info .cellnum .getcode img{width:100%;}
+.info p .entrycode{width:200px;opacity: 0.4;}
+.accept{margin:16px auto 15px;width:116px;overflow:hidden;}
+.accept a{display:block;width:116px;height:auto;}
+.accept a.acceptprize {-webkit-tap-highlight-color:rgba(255,0,0,0);}
+.accept a.acceptprize img{width:100%;}
+.title{width:100%; height:55px;border-top:1px solid #d6dcde;border-bottom:1px solid #d6dcde;}
+.title p{color:#666666;font-size:17px;text-align:center;line-height:55px;font-weight:600;}
+.awardPage .prizeText_1,.awardPage .prizeText_2,.awardPage .prizeText_3,.awardPage .prizeText_4,.awardPage .prizeText_5{display: none;}
+
+
+
+
+/*验证码页面+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.codePage{height: 100%;width: 100%;position: absolute;z-index: 7;top: 0;left: 0;text-align: center;display:none;}
+.code_bg{position: absolute;z-index: -1;top: 0;left: 0;width:100%;}
+.codePage p{font-size: 13px;color: #5b9dad;margin:0; line-height: 20px;}
+.codePage .awardPrize{width: 100%;margin: 0px auto;overflow: hidden;}
+.codePage .awardLogo{height: 125px;}
+.codePage .awardLogo img{padding-top:8px;}
+.codePage .awardLogo a{margin: 7px 18px 0 0;}
+.codePage .prize{width:100%;margin:0px auto;position:relative;}
+.codePage .prizePic{width: 125px;margin:0px auto;}
+.codePage .prizePic img{width:100%;}
+.codePage .awardPrize .prosit{color: #333333;font-size:13px;text-align:center;line-height:18px;}
+.codePage .code{margin:4px auto;width:140px;line-height:31px; overflow:hidden; background:url('../Images/code.png') no-repeat;background-size: 100%;font-size:18px;color:#fff;font-weight:600;}
+.codePage .step{width:235px;margin:5px auto 10px;text-align:left;}
+.codePage .step p{font-size: 11px;line-height:17px;color:#333333;}
+.codePage .step p span{color:#319707;}
+.codePage .step p.awardstep{font-size:13px;margin-bottom:2px;}
+.codePage .accept{margin:20px auto 0px;width:138px;overflow:hidden;}
+.codePage .accept a.btn_down{width:138px;display:block;float:left;-webkit-tap-highlight-color:rgba(255,0,0,0);}
+.codePage .accept a img{width:100%;}
+
+
+/*分享页面+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.sharePage{display: none;z-index: 1000;}
+.sharePage .share_newbackgc img {width:100%;position:absolute; z-index:-1;}
+.sharePage .share_newwords{text-align:center; padding-top:10px;}
+.sharePage .share_newwords img{width:95%; height:100%;text-align:center;}
+.sharePage .share_newchage{position:absolute;bottom:30px;left:50%;margin-left:-97px}
+.sharePage .share_newchage a{width:194px; height:46px;  display:block;  }
+.sharePage .share_newchage img{width:100%}
+.share_newwords p{color:#f49930;font-size:21px;margin:10px;display:none;}
+
+
+/*scene-e+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.bombbox{width:262px;height:376px;position:absolute;top:50%;margin-top:-188px;left:50%;margin-left:-131px;background:url('../Images/bombbox_bg.png');background-size:100%;display:none;z-index:999;}
+.bombbox .logo{z-index:222;width:45%;margin-top:25px;}
+.bombbox .bombbox_success{display:none;}
+.bombbox .bombbox_success,.bombbox .bombbox_failure{width:262px;}
+.bombbox .bombbox_success p,.bombbox .bombbox_failure p{margin:10px auto 0;text-align:center;color:#666666;font-size:14px;width:200px;text-align: center; }
+.bombbox .bombbox_success img,.bombbox .bombbox_failure img {width:123px;}
+.bombbox a{display:block;width:126px;height:31px;-webkit-tap-highlight-color:rgba(255,0,0,0);margin:20px auto 5px;}
+.bombbox a img{width:100%;}
+
+
+
+/*scene-f+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+/*scene-g+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+/*scene-h+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+/*scene-i+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+/*scene-j+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+.disn{display:none;}
+.disy{display:block;}
